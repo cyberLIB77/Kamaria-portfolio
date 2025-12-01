@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Travel Agency Page</title>
+  <meta name="description" content="Air Liberia | Curated travel packages and top itineraries for explorers.">
+  <style>
+    /* Page background: red, white, and blue stripes */
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, red 0%, white 50%, blue 100%);
+      color: #000;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* Vertical menu on the left */
+    nav {
+      background-color: rgba(255,255,255,0.85);
+      padding: 1rem;
+      width: 200px;
+      box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+    }
+
+    nav h1 {
+      font-size: 1.2rem;
+      text-align: center;
+      color: #003366;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 1rem 0 0 0;
+    }
+
+    nav ul li {
+      margin: 0.5rem 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      color: #003366;
+    }
+
+    /* Main content on the right */
+    main {
+      flex: 1;
+      background-color: rgba(255,255,255,0.95);
+      padding: 2rem;
+      overflow-y: auto;
+    }
+
+    h1 {
+      color: #003366;
+    }
+
+    h2 {
+      color: #990000;
+    }
+
+    figure {
+      margin: 1rem 0;
+    }
+
+    figure img {
+      width: 100%;
+      max-width: 350px;
+      border-radius: 8px;
+      display: block;
+    }
+
+    figcaption {
+      font-weight: bold;
+      margin-top: 0.5rem;
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <!-- Vertical Navigation Menu -->
+  <nav>
+    <h1>Air Liberia</h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#packages">Packages</a></li>
+      <li><a href="#itineraries">Itineraries</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h1 id="home">Air Liberia Travel Agency — Handpicked Travel Destinations</h1>
+    <p>Explore curated journeys — group adventures, private tours, and itinerary highlights designed for the curious traveler.</p>
+
+    <h2 id="packages">Packages</h2>
+    <p>Choose from flexible travel packages built to fit groups or solo travelers who prefer private, tailored experiences.</p>
+
+    <ul>
+      <li><a href="https://www.freecodecamp.org/learn" target="_blank">Group Travels</a></li>
+      <li><a href="https://www.freecodecamp.org/learn" target="_blank">Private Tours</a></li>
+    </ul>
+
+    <h2 id="itineraries">Top Itineraries</h2>
+
+    <figure>
+      <a href="https://www.freecodecamp.org/learn" target="_blank">
+        <img src="https://cdn.freecodecamp.org/curriculum/labs/colosseo.jpg" alt="Historic ruins and archways at a famous colosseum">
+      </a>
+      <figcaption>Historic Wonders — City & Ruins Getaway</figcaption>
+    </figure>
+
+    <figure>
+      <a href="https://www.freecodecamp.org/learn" target="_blank">
+        <img src="https://cdn.freecodecamp.org/curriculum/labs/alps.jpg" alt="Snow-capped alpine mountain range and pine forests">
+      </a>
+      <figcaption>Alpine Explorer — Mountains & Trails</figcaption>
+    </figure>
+
+    <figure>
+      <a href="https://www.freecodecamp.org/learn" target="_blank">
+        <img src="https://cdn.freecodecamp.org/curriculum/labs/sea.jpg" alt="Crystal blue sea and sunny coastline">
+      </a>
+      <figcaption>Coastal Retreat — Sun, Sea & Relaxation</figcaption>
+    </figure>
+
+    <footer id="contact">
+      <p>© Air Liberia — Dream · Book · Explore</p>
+    </footer>
+  </main>
+</body>
+</html>

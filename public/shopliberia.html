@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShopLiberia</title>
+
+<style>
+  :root{
+    --blue:#0b1a3a;
+    --red:#c91414;
+    --white:#ffffff;
+    --bg:#0b1a3a;
+    --card:#11224d;
+    --muted:#d0d7e6;
+    --glass:rgba(255,255,255,0.06);
+    --radius:14px;
+    --shadow:0 6px 20px rgba(0,0,0,0.45);
+    --max-width:1200px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  *{ box-sizing:border-box; }
+
+  body{
+    margin:0;
+    background:linear-gradient(180deg, #0b1a3a 0%, #0f1f46 70%);
+    color:white;
+    display:flex;
+    justify-content:center;
+    padding:0;
+  }
+
+  .container{
+    width:100%;
+    max-width:var(--max-width);
+    padding:20px;
+  }
+
+  /* ===== LIBERIAN FLAG RIBBON ===== */
+  .flag-bar{
+    width:100%;
+    height:30px;
+    display:flex;
+  }
+  .flag-bar div{
+    flex:1;
+  }
+  .flag-red{ background:#c91414; }
+  .flag-white{ background:#ffffff; }
+  .flag-blue{ background:#0b1a3a; }
+
+  /* ===== HEADER ===== */
+  header{
+    margin-top:20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:white;
+    text-decoration:none;
+  }
+
+  .logo{
+    width:55px;
+    height:55px;
+    border-radius:10px;
+    background:linear-gradient(135deg, var(--red), #ff4a4a);
+    display:grid;
+    place-items:center;
+    font-weight:bold;
+    font-size:18px;
+    color:white;
+    box-shadow:var(--shadow);
+  }
+
+  nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    padding:8px 12px;
+    border-radius:8px;
+    transition:0.3s;
+  }
+  nav a:hover{
+    background:var(--glass);
+    color:var(--red);
+  }
+
+  /* SEARCH */
+  .search{
+    background:var(--card);
+    border-radius:50px;
+    padding:8px 15px;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    box-shadow:var(--shadow);
+  }
+  .search input{
+    background:transparent;
+    border:none;
+    color:white;
+    width:180px;
+  }
+
+  /* ===== HERO SECTION ===== */
+  .hero{
+    margin-top:40px;
+    background:rgba(255,255,255,0.08);
+    padding:40px;
+    border-radius:var(--radius);
+    text-align:center;
+    box-shadow:var(--shadow);
+  }
+  .hero h1{
+    margin-bottom:10px;
+    font-size:38px;
+  }
+  .hero p{
+    font-size:18px;
+    opacity:0.9;
+  }
+
+  .btn-primary{
+    margin-top:20px;
+    font-size:16px;
+    background:linear-gradient(90deg, var(--red), #ff5a5a);
+    color:white;
+    border:none;
+    padding:14px 20px;
+    border-radius:var(--radius);
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+  }
+  .btn-primary:hover{
+    opacity:0.85;
+  }
+
+  /* ===== CATEGORY GRID ===== */
+  .categories{
+    margin-top:50px;
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:20px;
+  }
+
+  .card{
+    background:rgba(255,255,255,0.07);
+    border:1px solid rgba(255,255,255,0.2);
+    padding:20px;
+    border-radius:var(--radius);
+    text-align:center;
+    transition:0.3s;
+  }
+  .card:hover{
+    transform:translateY(-5px);
+    background:rgba(255,255,255,0.12);
+    border-color:var(--red);
+  }
+
+  /* FOOTER */
+  footer{
+    margin-top:70px;
+    padding:20px;
+    text-align:center;
+    opacity:0.7;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- Liberian Flag Ribbon -->
+  <div class="flag-bar">
+    <div class="flag-red"></div>
+    <div class="flag-white"></div>
+    <div class="flag-blue"></div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <a href="#" class="brand">
+      <div class="logo">SL</div>
+      <h2>ShopLiberia</h2>
+    </a>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">Deals</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <div class="search">
+      🔍 <input type="text" placeholder="Search products...">
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Welcome to ShopLiberia 🇱🇷</h1>
+    <p>Your trusted online marketplace for everything Liberian — fast, reliable & affordable.</p>
+    <button class="btn-primary">Start Shopping</button>
+  </section>
+
+  <!-- Categories -->
+  <section class="categories">
+    <div class="card">Electronics</div>
+    <div class="card">Fashion</div>
+    <div class="card">Home & Living</div>
+    <div class="card">Beauty</div>
+    <div class="card">Sports</div>
+    <div class="card">Food & Grocery</div>
+  </section>
+
+  <footer>
+    © 2025 ShopLiberia — Proudly made for Liberia 🇱🇷
+  </footer>
+
+</div>
+
+</body>
+</html>
